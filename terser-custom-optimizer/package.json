@@ -1,0 +1,20 @@
+{
+  "name": "terser-custom-optimizer",
+  "version": "1.0.0",
+  "description": "custom optimizer for terser",
+  "main": "./src/terser-custom-optimizer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "terser",
+    "custom",
+    "optimizer"
+  ],
+  "author": "abhuz",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/plugin": "^2.4.1",
+    "terser": "^5.12.1"
+  }
+}
