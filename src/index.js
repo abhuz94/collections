@@ -1,2 +1,6 @@
+import Heap from './Heap';
+
 // eslint-disable-next-line import/prefer-default-export
-export { default as Heap } from './Heap/Heap';
+export { Heap };
+
+window.Heap = Heap;

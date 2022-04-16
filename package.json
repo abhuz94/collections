@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "JS implementation of common data structures",
   "source": "./src/index.js",
-  "main": "./dist/collections.min.js",
+  "main": "./dist/collections.module.min.js",
+  "modern": "./dist/collections.min.js",
+  "legacy": "./dist/collections.legacy.min.js",
   "scripts": {
     "build": "rimraf ./dist/ && parcel build --no-source-maps",
     "watch": "parcel watch",
@@ -34,5 +36,17 @@
     "parcel": "^2.4.1",
     "rimraf": "^3.0.2",
     "parcel-optimizer-terser-custom-optimizer": "file:terser-custom-optimizer"
+  },
+  "targets": {
+    "legacy": {
+      "engines": {
+        "browsers": "> 0.5%, last 2 versions, not dead"
+      }
+    },
+    "modern": {
+      "engines": {
+        "browsers": "last 2 Chrome versions"
+      }
+    }
   }
 }
